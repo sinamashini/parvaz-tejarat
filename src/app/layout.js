@@ -1,7 +1,22 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "/public/assets/scss/master.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+import CommonAnimation from "src/components/core/common/CommonAnimation";
+import ScrollSmootherComponents from "src/components/core/common/ScrollSmootherComponents";
+import Preloader from "src/components/core/preloader";
+import CursorAnimation from "src/components/core/common/CursorAnimation";
+import ScrollTop from "src/components/core/common/ScrollTop";
+import Header from "src/components/core/header";
+import Footer from "src/components/core/footer";
+import CursorUser from "src/components/core/common/CursorUser";
+import { ApolloProvider } from "@apollo/client";
+import apolloClient from "src/lib/apolloClient";
+config.autoAddCss = false;
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fa">
+      <body className="dir-rtl">{children}</body>
     </html>
   );
 }

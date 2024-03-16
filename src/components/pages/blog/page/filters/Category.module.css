@@ -1,0 +1,25 @@
+container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.navy {
+  background-color: navy;
+  color: white;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.btn {
+  margin: 10px;
+}
